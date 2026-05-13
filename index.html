@@ -3,39 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treact Project</title>
+    <title>Treact</title>
   <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/603c241902.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <section id="landing">
-    <div class="row nav__row">
+  <section id="home">
+    <div class="row">
       <div class="nav__container">
         <nav>
-          <div class="nav__title"><img src="assets/PurpleT.svg" class="nav__logo" alt="Treact Logo"><h1>Treact</h1></div>
+          <div class="nav__title title"><img src="assets/T.png" class="nav__logo" alt="Treact Logo"><h1>Treact</h1></div>
           <ul class="nav__list">
-            <li nav__item><a href="#" class="nav__anchor underline-effect">About</a></li>
-            <li nav__item><a href="#" class="nav__anchor underline-effect">Blog</a></li>
-            <li nav__item><a href="#" class="nav__anchor underline-effect">Pricing</a></li>
-            <li nav__item><a href="#" class="nav__anchor underline-effect">Contact Us</a></li>
+            <li class="nav__item"><a href="#" class="nav__anchor underline-effect">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__anchor underline-effect">Blog</a></li>
+            <li class="nav__item"><a href="#" class="nav__anchor underline-effect">Pricing</a></li>
+            <li class="nav__item"><a href="#" class="nav__anchor underline-effect">Contact Us</a></li>
 
-            <div class="link">
-            <li nav__item><a href="#" class="nav__anchor underline-effect">Login</a></li>
-            <li nav__item><a href="#" class="nav__anchor nav__anchor--primary">Sign Up</a></li>
-            </div>
+            <li class="link nav__item"><a href="#" class="nav__anchor underline-effect">Login</a></li>
+            <li class="nav__item"><a href="#" class="nav__anchor anchor__primary">Sign Up</a></li>
           </ul>
         </nav>
       </div>
     </div>
-
+  
     <div class="row">
       <div class="container">
-        <div class="header"></div>
+          <div class="description">
+          <h1 class="header__title title">Beautiful React Templates <span class="green">For You~</span></h1>
+          <p class="header__para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
+          <div class="email-box">
+            <input type="email" placeholder="Your Email Address" class="email-input">
+            <button class="email-button">Get Started</button>
+          </div>
+          <p class="customers"><span class="grey">OUR TRUSTED COSTUMERS</span></p>
+          <figure class="customer__list--wrapper"><img src="assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="Customer List"></figure>
+          <figure class="header__image--wrapper"><img src="assets/undraw_winter-designer_a6kq.svg" alt="Designer At Work"></figure>
+        </div>
+    </div>
+  </div>
+    </section>
+
+    <section id="features">
+      <div class="row">
+        <div class="container">
+            <div class="description">
+            <h4 class="section__tag green">FEATURES</h4>
+            <h1 class="features__title title">We Have An Amazing <span class="green">Service.</span></h1>
+            <p class="features__para">We deliver dependable, high-quality service designed to make your experience smooth from start to finish. Our team focuses on clear communication, thoughtful solutions, and results you can trust — <span class="green">every single time.</span></p>
+            </div>
+            <div class="features__container">
+              
+              <div class="feature">
+              <div class="icon__wrapper">
+                <i class="fa-solid fa-shield-halved" style="color: rgb(170, 214, 136);"></i>
+              </div>
+              <h2 class="features__title title">Secure</h2>
+              <div class="features__para--wrapper"><p class="features__para">Your data and operations are protected with modern security practices designed to safeguard sensitive information. We prioritize privacy, stability, and protection at every level, so you can focus on what matters without worrying about vulnerabilities.</p>
+            </div>
+
+              <div class="feature">
+              <div class="icon__wrapper">
+                <i class="fa-solid fa-headset" style="color: rgb(170, 214, 136);"></i>
+              </div>
+              <h2 class="features__title title">24/7 Support</h2>
+              <div class="features__para--wrapper"><p class="features__para">Help is always within reach. Our support team is available around the clock to answer questions, resolve issues, and keep your experience running smoothly—no matter the time of day.</p></div>
+            </div>
+            
+              <div class="feature">
+              <div class="icon__wrapper">
+                <i class="fa-solid fa-sliders" style="color: rgb(170, 214, 136);"></i>
+              </div>
+              <h2 class="features__title title">Customizable</h2>
+              <div class="features__para--wrapper"><p class="features__para">Every need is different, and flexibility matters. Our solutions are designed to adapt to your preferences, workflows, and goals, giving you control over how things look and function.</p></div>
+            </div>
+            
+              <div class="feature">
+              <div class="icon__wrapper">
+                <i class="fa-solid fa-up-down" style="color: rgb(170, 214, 136);"></i>
+              </div>
+              <h2 class="features__title title">Reliable</h2>
+              <div class="features__para--wrapper"><p class="features__para">Consistency is at the heart of everything we provide. Our service is built to perform dependably, delivering steady results you can trust day after day, project after project.</p></div>
+            </div>
+            
+              <div class="feature">
+              <div class="icon__wrapper">
+                <i class="fa-solid fa-bolt-lightning" style="color: rgb(170, 214, 136);"></i>
+              </div>
+              <h2 class="features__title title">Fast</h2>
+              <div class="features__para--wrapper"><p class="features__para">Speed matters when efficiency counts. Our streamlined processes and optimized systems ensure quick performance, helping you save time and stay productive without delays.</p></div>
+            </div>
+            
+              <div class="feature">
+              <div class="icon__wrapper">
+                <i class="fa-solid fa-hand-holding-heart" style="color: rgb(170, 214, 136);"></i>
+              </div>
+              <h2 class="features__title title">Easy</h2>
+              <div class="features__para--wrapper"><p class="features__para">Simplicity drives better results. Our user-friendly approach makes setup, navigation, and daily use straightforward, so you can get started quickly without unnecessary complexity.</p></div>
+            </div>
+            
+
+          </div>
+        </div>
+    </section>
+
+    <section id="quality">
+      <div class="row">
+        <div class="container">
+            <h4 class="section__tag green">QUALITY WORK</h4>
+          <div class="description">
+            <h1 class="quality__title title">Designed & Developed by <span class="green">Professionals.</span></h1>
+            <p class="features__para">We take pride in delivering work that meets high standards of accuracy, consistency, and attention to detail. Every project is approached with care to ensure dependable results that stand up to real-world use.</p>
+            <a href="#" class="anchor__primary">Learn More</a>
+          </div>
+          <figure class="quality__image--wrapper"><img src="assets/undraw_creative-flow_t3kz.svg" alt="Undraw Creative Flow"></figure>
 
       </div>
-    </div>
+      </div>
     </section>
+
+    <section id="steps">
+      <div class="row">
+        <div class="container">
+
+            <figure class="steps__image--wrapper">
+              <img src="assets/undraw_completed-steps_ngu7.svg" alt="">
+            </figure>
+            <div class="description">
+              <h4 class="section__tag green">STEPS</h4>
+              <h1 class="steps__title title">Easy To <span class="green">Get Started.</span></h1>
+              <div class="step__one"><h1 class="opacity">01</h1><h2 class="step__name">Register</h2><p class="step__para">Create an account with us using Google or Facebook.</p></div>
+              <div class="step__two"><h1 class="opacity">02</h1><h2 class="step__name">Download</h2><p class="step__para">Browse and Download the template that you like from the marketplace.</p></div>
+              <div class="step__three"><h1 class="opacity">03</h1><h2 class="step__name">Run</h2><p class="step__para">Follow the instructions to setup and customize the template to your needs.</p></div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="values">\
+      <div class="row">
+        <div class="container">
+          <h4 class="section__tag green">VALUES</h4>
+          <div class="description">
+            <h1 class="values__title title">We Always Abide By Our <span class="green">Principles.</span></h1>
+            <p class="values__para">Our core values guide every decision we make and every service we provide. We are committed to integrity, accountability, and delivering consistent results through thoughtful execution. By prioritizing transparency and respect, we build lasting relationships and create experiences our clients can depend on.</p>
+            <div class="values__para--mini">
+              <h2 class="values__para--mini__title green">Affordability</h2><p>We believe high-quality service should remain accessible. Our pricing is designed to deliver strong value without compromising on results.</p>
+            </div>
+            <div class="values__para--mini">
+              <h2 class="values__para--mini__title green">Professionalism</h2><p>We approach every interaction with respect, clarity, and attention to detail. From communication to delivery, our standards remain consistent and dependable.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="pricing">
+      <div class="row">
+        <div class="container">
+          <h4 class="section__tag green">PRICING</h4>
+          <div class="description">
+            <h1 class="section__title">Flexible And Affordable <span class="green">Plans.</span></h1>
+            <p class="pricing__para">Our pricing plans are designed with both flexibility and value in mind. We offer options that adapt to your needs while maintaining a balance between affordability and high-quality service.</p>
+          </div>
+          <div class="plans">
+            <div class="plan">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 </body>
 </html>
