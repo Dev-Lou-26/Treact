@@ -6,13 +6,18 @@
     box-sizing: border-box;
     font-family: 'Inter', system-ui;
     color: #243810;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     max-width: 100vw;
     overflow-x: hidden;
     margin: 0;
+    background-color: #FCFDFB;
 }
 
 .row {
@@ -26,7 +31,6 @@ body {
     max-width: 1024px;
     margin: 0 auto;
 }
-
 
 a {
     position: relative;
@@ -46,8 +50,18 @@ h2 {
     color: #243810;
 }
 
+p {
+    color: #243810c8;
+    line-height: 1.5;
+    font-size: 24px;
+}
+
 
 /* UTILITIES */
+
+.white {
+    color: white;
+}
 
 .green {
     color: #AAD688;
@@ -60,6 +74,13 @@ h2 {
 .opacity {
     opacity: .2;
 }
+
+.btn {
+    height: 50px;
+    width: 100px;
+
+}
+
 
 /* LAYOUT */
 
@@ -79,6 +100,7 @@ h2 {
 /*
 C O M P O N E N T S
 */
+
 
 /* NAVIGATION BAR */
 
@@ -152,5 +174,105 @@ a:hover::after {
     align-items: center;
 }
 
-/* HEADER *? 
 
+/* HEADER */
+
+/* F E A T U R E S */
+
+.feature__header--description {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.features__container {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.feature {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    width: calc(100% / 3);
+    flex-wrap: wrap;
+    padding: 24px;
+}
+
+.feature__description {
+    width: 80%;
+}
+
+.feature__icon {
+    font-size: 24px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon__wrapper {
+    height: 72px; 
+    width: 72px;
+    border-style: solid; 
+    border-color: #24381059;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    border-width: .5px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.features__title { 
+}
+
+
+
+
+/* G E T S T A R T E D */
+
+.start__container {
+    background-color: #AAD688;
+    height: 100%;
+    width: 100%;
+    padding-inline: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-content: column; 
+}
+
+.start__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.start__title {
+    width: 60%;
+}
+
+.anchor__start {
+    margin-right: 24px;
+    background-color: #70A843;
+}
+
+.anchor__contact {
+    border-color: ivory;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.anchor__contact , .anchor__start {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 20px;
+}
