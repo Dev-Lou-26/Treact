@@ -47,8 +47,8 @@ p {
 }
 
 h1 {
-    font-size: 36px;
-    line-height: 1.5;
+    font-size: 48px;
+    line-height: 1.25;
 }
 
 h2 {
@@ -131,7 +131,10 @@ C O M P O N E N T S
 
 nav {
     display: flex;
-    padding: 40px;
+    background-color: #F3F7EF;
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -223,6 +226,20 @@ a:hover::after {
     justify-content: center;
     align-items: center;
 }
+
+.waves {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.wave {
+    width: 50%;
+}
+
+
+
+
 
 
 /* H E A D E R */
@@ -335,6 +352,10 @@ button:hover {
 
 .feature__tag {
     text-align: center;
+}
+
+.features__title {
+    margin-bottom: 12px;
 }
 
 
@@ -451,6 +472,7 @@ button:hover {
 
 .quality__title {
     margin: 16px 0;
+    width: 70%
 }
 
 .quality__description {
@@ -559,6 +581,99 @@ button:hover {
     margin-bottom: 12px;
 }
 
+
+
+
+
+/* V A L U E S */
+
+#values {
+    height: 140vh;
+    background-color: #F3F7EF;
+}
+
+.values__container {
+    padding: 24px;
+    height: 130vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.values__tag {
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.values__title {
+    margin-bottom: 24px;
+}
+
+.values__text {
+    width: 50%;
+}
+
+.values__description {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.values__description--mini {
+    width: 50%;
+    gap: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.values__para {
+    width: 100%;
+}
+
+.values__para--mini {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.values__para--mini__title {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+
+.values__icon {
+    font-size: 20px;
+    height: 32px;
+    width: 32px;
+    border-style: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+
+.values__icon--green {
+    background-color: #00800093;
+
+}
+
+.values__icon--red {
+    background-color: #b4030379
+}
+
+.values__image--wrapper {
+    width: 50%;
+    align-self: flex-end;
+}
+
+.values__image {
+    width: 100%;
+    max-width: 546px;
+}
 
 
 /* G E T S T A R T E D */
