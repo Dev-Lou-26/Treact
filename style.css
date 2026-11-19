@@ -87,11 +87,6 @@ h4 {
     opacity: .2;
 }
 
-.btn {
-    height: 50px;
-    width: 100px;
-}
-
 .header__title {
     line-height: 1.15;
     margin-bottom: 32px;
@@ -137,6 +132,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    background-color: #F3F7EF;
     }
 
 .t__wrapper {
@@ -247,8 +243,6 @@ a:hover::after {
 .wave__two {
     padding-top: 29px;
 }
-
-
 
 
 
@@ -603,7 +597,7 @@ button:hover {
 /* V A L U E S */
 
 #values {
-    height: 130vh;
+    height: 140vh;
 }
 
 .values__container {
@@ -621,6 +615,7 @@ button:hover {
 }
 
 .values__title {
+    width: 80%;
     margin-bottom: 24px;
 }
 
@@ -649,13 +644,14 @@ button:hover {
     width: 90%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
 
 }
 
 .values__para--mini__title {
     display: flex;
     flex-direction: row;
-    margin-bottom: 12px;
+    margin: 12px 12px;
 }
 
 .values__icon {
@@ -685,12 +681,11 @@ button:hover {
 }
 
 .values__image {
-    width: 100%;
+    width: 90%;
     max-width: 546px;
     display: flex;
     align-self: flex-end;
 }
-
 
 
 
