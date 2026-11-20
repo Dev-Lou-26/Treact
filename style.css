@@ -93,6 +93,7 @@ h4 {
 }
 
 
+
 /* LAYOUT */
 
 .row {
@@ -133,6 +134,7 @@ nav {
     align-items: center;
     width: 100%;
     background-color: #F3F7EF;
+    position: absolute;
     }
 
 .t__wrapper {
@@ -228,22 +230,22 @@ a:hover::after {
 }
 
 .waves {
-    width: 100%;
+    width: 120%;
+    position: relative;
     display: flex;
-    flex-direction: row;
+    line-height: 0;
 }
 
 .wave {
-    width: 50%;
+    width: 100%;
     position: relative; 
-    bottom: 29px;
+    bottom: 0;
+    display: block;
+    transform: scaleY(0.5);
+    transform-origin: top;
     z-index: 1;
+    padding-top: 55px;
 }
-
-.wave__two {
-    padding-top: 29px;
-}
-
 
 
 
@@ -257,10 +259,13 @@ a:hover::after {
 }
 
 .header__row {
+    margin-top: -200px;
+    position: relative;
     display: flex;
+    z-index: 2;
     justify-content: space-between;
     align-items: center;
-    padding: 88px 36px;
+    padding: 0px 36px;
 }
 
 .header__image {
@@ -471,7 +476,6 @@ button:hover {
 .quality__container {
     height: 100vh;
     display: flex;
-    margin-top: 100px;
     justify-content: space-between;
 }
 
@@ -592,8 +596,6 @@ button:hover {
 
 
 
-
-
 /* V A L U E S */
 
 #values {
@@ -601,12 +603,12 @@ button:hover {
 }
 
 .values__container {
-    padding: 24px;
     height: 130vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    margin: 0px 40px;
 }
 
 .values__tag {
@@ -693,10 +695,11 @@ button:hover {
 /* P L A N S */
 
 #plans {
-    height: 140vh;
+    height: 160vh;
 }
 
 .plan__container {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -719,24 +722,78 @@ button:hover {
 }
 
 .plans {
-    margin-top: 36px;
+    height: 110vh;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 24px;
 }
 
 .plan {
     width: calc(100% / 3);
-    gap: 8px;
+    height: 105vh;
+    overflow: hidden;
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    gap: 1px;
+    padding: 0;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 0px #607e4a41;
+    margin: 0 0;
 
-    background-color: rgba(0, 0, 255, 0.171);
+    background-color: #0000ff2c;
+}
+
+.plan__business {
+    background-color: #e4eedb
+}
+
+.plan__business--top,
+.plan__business--middle,
+.plan__business--bottom {
+    background-color: #F3F7EF
+}
+
+.plan__top,
+.plan__business--top,
+.plan__business--middle,
+.plan__business--bottom {
+    margin-top: 24px;
+    height: 38vh;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.plan__middle,
+.plan__business--top,
+.plan__business--middle,
+.plan__business--bottom {
+    height: 46vh;
+    width: 100%;
+}
+
+.plan__bottom,
+.plan__business--top,
+.plan__business--middle,
+.plan__business--bottom {
+    height: 20vh;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
 }
 
 
+.plan__item {
+    padding-top: 16px;
+}
 
 
 
